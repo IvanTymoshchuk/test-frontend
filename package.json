@@ -2,7 +2,7 @@
   "name": "test-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IvanTymoshchuk.github.io/test-frontend/",
+  "homepage": "https://IvanTymoshchuk.github.io/test-frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^6.0.0"
   }
 }
