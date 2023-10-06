@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/test-frontend/static/css/main.56cb5c79.css",
-    "main.js": "/test-frontend/static/js/main.94d8c398.js",
+    "main.css": "/test-frontend/static/css/main.e6c13ad2.css",
+    "main.js": "/test-frontend/static/js/main.44a0e247.js",
+    "static/media/Inter-Medium.ttf": "/test-frontend/static/media/Inter-Medium.6dcbc9bed1ec438907ee.ttf",
+    "static/media/Montserrat-SemiBold.otf": "/test-frontend/static/media/Montserrat-SemiBold.b4f6721ba1a251742ea6.otf",
+    "static/media/Montserrat-Regular.otf": "/test-frontend/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
+    "static/media/Manrope-SemiBold.otf": "/test-frontend/static/media/Manrope-SemiBold.280ef7a596a9cd6aeb25.otf",
+    "static/media/Manrope-Regular.otf": "/test-frontend/static/media/Manrope-Regular.d8bf9c01fa3ff12964af.otf",
+    "static/media/Manrope-Medium.otf": "/test-frontend/static/media/Manrope-Medium.816019219d026d1bd357.otf",
+    "static/media/Manrope-Thin.otf": "/test-frontend/static/media/Manrope-Thin.e7946a022358599f8959.otf",
     "index.html": "/test-frontend/index.html",
-    "main.56cb5c79.css.map": "/test-frontend/static/css/main.56cb5c79.css.map",
-    "main.94d8c398.js.map": "/test-frontend/static/js/main.94d8c398.js.map"
+    "main.e6c13ad2.css.map": "/test-frontend/static/css/main.e6c13ad2.css.map",
+    "main.44a0e247.js.map": "/test-frontend/static/js/main.44a0e247.js.map"
   },
   "entrypoints": [
-    "static/css/main.56cb5c79.css",
-    "static/js/main.94d8c398.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.44a0e247.js"
   ]
 }
