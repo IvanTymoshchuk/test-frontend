@@ -1,7 +1,10 @@
 import styled from '@emotion/styled';
 import { mq, colors } from '../../utils';
+import { Link } from 'react-router-dom';
 
 export const HeaderWrap = styled.header`
+  position: fixed;
+  width: 100%;
   display: flex;
   background-color: ${colors.backgroundHeader};
   justify-content: space-around;
@@ -23,10 +26,7 @@ export const Image = styled.img`
   margin-right: 10px;
 `;
 
-export const HeaderLogo = styled.a`
-  color: #eee;
-  font-weight: 600;
-`;
+export const HeaderLogo = styled(Link)``;
 
 export const NavList = styled.ul`
   display: flex;
@@ -40,12 +40,13 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   padding: 10px;
-  color: #eee;
+  color: ${colors.white};
   font-size: 15px;
   font-weight: 500;
   border-radius: 5px;
+  cursor: pointer;
   :hover {
     background-color: rgb(41, 41, 128);
   }

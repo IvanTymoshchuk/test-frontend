@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <HeaderWrap>
       <Logo>
-        <HeaderLogo href="#">
+        <HeaderLogo to="home">
           <Image src={logo} alt="logo" />
         </HeaderLogo>
       </Logo>
@@ -23,13 +23,13 @@ export const Header = () => {
       <Nav id="nav-menu">
         <NavList>
           <NavItem>
-            <NavLink>Home</NavLink>
+            <NavLink to="home">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Catalog</NavLink>
+            <NavLink to="catalog">Catalog</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Favorite</NavLink>
+            <NavLink to="favorite">Favorite</NavLink>
           </NavItem>
         </NavList>
       </Nav>
