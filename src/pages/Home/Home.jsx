@@ -1,6 +1,8 @@
 import React from 'react';
-import { Wrap, LinkRental } from './Home.styled';
 import { useNavigate } from 'react-router-dom';
+import backgroundImg from '../../img/Home.png';
+import Buttons from 'components/Button/Button';
+import { Container } from './Home.styled';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -8,12 +10,13 @@ export const Home = () => {
   const handleExploreClick = () => {
     navigate('/catalog');
   };
-  
+
   return (
     <>
-      <Wrap>
-        <LinkRental onClick={handleExploreClick}>Look all car</LinkRental>
-      </Wrap>
+      <Container>
+        <img src={backgroundImg} alt="backgroundImg" />
+        <Buttons onClick={handleExploreClick} text="All car" />
+      </Container>
     </>
   );
 };

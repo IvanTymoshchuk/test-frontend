@@ -1,22 +1,25 @@
 import React from 'react';
+import logo from '../../img/logo.png';
 import {
-  HeaderWrap,
+  HeaderContainer,
   Logo,
+  Image,
   HeaderLogo,
+  Span,
   Nav,
   NavList,
   NavItem,
   NavLink,
-  Image,
 } from './Header.styled';
-import logo from '../../img/logo.png';
 
 export const Header = () => {
   return (
-    <HeaderWrap>
+    <HeaderContainer>
       <Logo>
+        <Image src={logo} alt="logo" />
         <HeaderLogo to="home">
-          <Image src={logo} alt="logo" />
+          Rent
+          <Span>Car</Span>
         </HeaderLogo>
       </Logo>
 
@@ -33,7 +36,7 @@ export const Header = () => {
           </NavItem>
         </NavList>
       </Nav>
-    </HeaderWrap>
+    </HeaderContainer>
   );
 };
 

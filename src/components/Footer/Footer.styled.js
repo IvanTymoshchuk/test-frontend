@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
+import { colors } from 'utils';
 
 export const FooterContainer = styled.div`
   display: flex;
-  background-color: #18191c;
-  color: #fff;
+  background-color: ${colors.backgroundHeader};
+  color: ${colors.white};
   padding: 20px;
   text-align: center;
-  font-family: ManropeThin;
 `;
 
 export const SubscribeRow = styled.div`
@@ -31,41 +31,41 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactLink = styled.a`
-  color: rgb(255 255 255 / 60%);
+  color: ${colors.white};
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
   margin-left: 5px;
 
   &:hover {
-    color: #2196f3;
+    color: ${colors.blueActenct};
   }
 `;
 
 export const EmailContact = styled.a`
   font-size: 16px;
   margin-left: 5px;
-  color: rgb(255 255 255 / 60%);
+  color: ${colors.white};
 
   &:hover {
-    color: #2196f3;
+    color: ${colors.blueActenct};
   }
 `;
 
 export const Address = styled.p`
-  color: rgb(255 255 255 / 60%);
+  color: ${colors.white};
   font-size: 16px;
   margin-left: 5px;
 `;
 
 export const GoogleMapsLink = styled.a`
-  color: rgb(255 255 255 / 60%);
+  color: ${colors.white};
   text-decoration: none;
   font-size: 16px;
   margin-left: 5px;
   transition: color 0.3s;
 
   &:hover {
-    color: #2196f3;
+    color: ${colors.blueActenct};
   }
 `;

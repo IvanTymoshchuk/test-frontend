@@ -1,14 +1,14 @@
 import React from 'react';
 import { BiPhone, BiMailSend, BiMapAlt, BiMap } from 'react-icons/bi';
 import {
-  ContactContainer,
   FooterContainer,
+  SubscribeRow,
   FooterNav,
+  ContactContainer,
   ContactLink,
   EmailContact,
   Address,
   GoogleMapsLink,
-  SubscribeRow,
 } from './Footer.styled';
 
 export const Footer = () => {
