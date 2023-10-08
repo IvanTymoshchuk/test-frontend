@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktest_frontend=self.webpackChunktest_frontend||[]).push([[793],{793:function(t,e,n){n.r(e),n.d(e,{Favorite:function(){return u}});n(791);var r=n(184),u=function(){return(0,r.jsx)("div",{children:"Favorite"})};e.default=u}}]);
-//# sourceMappingURL=793.3d05ddee.chunk.js.map
