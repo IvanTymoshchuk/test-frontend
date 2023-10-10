@@ -6,7 +6,9 @@ import {
   Item,
   ImageContainer,
   Img,
-  HeartIcon,
+  HeartBtn,
+  SvgHeartEmpty,
+  SvgHeart,
   Title,
   Span,
   SpanPrice,
@@ -64,10 +66,9 @@ export const AdvertsItems = ({ advert }) => {
     <Item>
       <ImageContainer>
         <Img src={advert.img || defaultImageURL} alt={make} width={274} />
-        <HeartIcon
-          onClick={toggleFavorite}
-          fill={isFavorite ? 'rgba(52, 112, 255, 1)' : 'transparent'}
-        />
+        <HeartBtn  onClick={toggleFavorite}>
+         {isFavorite ? <SvgHeart /> : <SvgHeartEmpty />}
+         </HeartBtn>
       </ImageContainer>
       <Title>
         {make}

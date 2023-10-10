@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { colors } from '../../utils';
-import { ReactComponent as Icon } from '../../img/heart.svg';
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
 
 export const Item = styled.li`
   display: flex;
@@ -26,21 +26,22 @@ export const Img = styled.img`
   );
 `;
 
-export const HeartIcon = styled(Icon)`
+export const HeartBtn = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  stroke-width: 1.5;
-  stroke-opacity: 0.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  background-color: transparent;
+`;
+export const SvgHeartEmpty = styled(FaRegHeart)`
+  width: 18px;
+  height: 18px;
+  fill: ${colors.white};
+`;
 
-  :hover,
-  :focus {
-    transform: scale(1.1);
-  }
+export const SvgHeart = styled(FaHeart)`
+  width: 18px;
+  height: 18px;
+  fill: ${colors.blueActenct};
 `;
 
 export const Title = styled.h3`
