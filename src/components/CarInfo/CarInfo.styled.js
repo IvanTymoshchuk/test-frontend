@@ -22,6 +22,7 @@ export const NameContainer = styled.span`
 `;
 
 export const NameCarModal = styled.span`
+ font-family: MontserratSemiBold;
   font-size: 18px;
 `;
 
@@ -40,8 +41,8 @@ export const InfoList = styled.ul`
 `;
 
 export const InfoItem = styled.p`
-  font-size: 12px;
-  color: black;
+  font-size: 14px;
+  color: ${colors.gray};
   display: flex;
   align-items: center;
 `;
@@ -52,10 +53,9 @@ export const Description = styled.p`
 `;
 
 export const TextModal = styled.h3`
-  font-weight: 400;
-  font-size: 14px;
+ font-family: MontserratSemiBold;
+  font-size: 18px;
   line-height: 1.43;
-  color: black;
   margin-top: 24px;
   margin-bottom: 8px;
 `;
