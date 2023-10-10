@@ -6,13 +6,13 @@ import Footer from 'components/Footer/Footer';
 
 export const Layout = () => {
   return (
-    <>
+    <div>
       <Header />
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
       <Footer />
-    </>
+    </div>
   );
 };
 

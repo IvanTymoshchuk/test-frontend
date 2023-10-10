@@ -5,6 +5,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
+  min-height: 75vh;
   background-color: ${colors.backgroundHeader};
 `;
+
+
