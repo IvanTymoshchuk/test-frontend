@@ -24,7 +24,7 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavLinkClick = (to) => {
+  const handleNavLinkClick = to => {
     navigate(to);
     setIsMenuOpen(false);
   };
@@ -33,7 +33,7 @@ export const Header = () => {
     <HeaderContainer>
       <Logo>
         <Image src={logo} alt="logo" />
-        <HeaderLogo to="/">
+        <HeaderLogo onClick={() => handleNavLinkClick('/')}>
           Rent
           <Span>Car</Span>
         </HeaderLogo>
@@ -52,10 +52,14 @@ export const Header = () => {
             <NavLink onClick={() => handleNavLinkClick('/')}>Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={() => handleNavLinkClick('/catalog')}>Catalog</NavLink>
+            <NavLink onClick={() => handleNavLinkClick('/catalog')}>
+              Catalog
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={() => handleNavLinkClick('/favorite')}>Favorite</NavLink>
+            <NavLink onClick={() => handleNavLinkClick('/favorite')}>
+              Favorite
+            </NavLink>
           </NavItem>
         </NavList>
       </Nav>
@@ -71,4 +75,3 @@ export const Header = () => {
 };
 
 export default Header;
-
