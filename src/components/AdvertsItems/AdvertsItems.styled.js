@@ -1,6 +1,6 @@
-import styled from '@emotion/styled';
-import { colors } from '../../utils';
-import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import styled from "@emotion/styled";
+import { colors } from "../../utils";
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 export const Item = styled.li`
   display: flex;
@@ -70,6 +70,5 @@ export const TextAbout = styled.p`
   width: 270px;
   font-size: 12px;
   line-height: 1.5em;
-
   color: ${colors.gray};
 `;

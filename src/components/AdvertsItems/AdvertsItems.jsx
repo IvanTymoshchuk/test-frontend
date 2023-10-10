@@ -16,14 +16,19 @@ import {
   TextAbout,
 } from './AdvertsItems.styled';
 import Buttons from 'components/Button/Button';
-const defaultImageURL = "../../img/no-image.jpg";
+import { Modal } from 'components/Modal/Modal';
+import CarInfo from 'components/CarInfo/CarInfo';
+const defaultImageURL = '../../img/no-image.jpg';
 
 export const AdvertsItems = ({ advert }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const dispatch = useDispatch();
   const favorites = useSelector(state => state.favorites.favorites);
 
   const [isFavorite, setIsFavorite] = useState(false);
   const isShortMake = advert.make.length <= 9;
+  const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   const {
     make,
@@ -35,6 +40,7 @@ export const AdvertsItems = ({ advert }) => {
     rentalCompany,
     type,
     mileage,
+    id,
   } = advert;
 
   const addressWords = address.split(' ');
@@ -60,8 +66,6 @@ export const AdvertsItems = ({ advert }) => {
     setIsFavorite(!isFavorite);
   };
 
- 
-
   return (
     <Item>
       <ImageContainer>
@@ -81,7 +85,13 @@ export const AdvertsItems = ({ advert }) => {
           {firstFunctionality}
         </TextAbout>
       </TextAboutContainer>
-      <Buttons text="Learn More" />
+      <Buttons onClick={() => toggleModal(id)} text="Learn More" />
+      {isModalOpen && (
+        <Modal openModal={toggleModal}>
+          <CarInfo id={id} advert={advert}/>
+        </Modal>
+      )}
+      
     </Item>
   );
 };
