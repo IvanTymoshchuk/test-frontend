@@ -4,7 +4,6 @@ import { FilteredForm } from 'components/FilteredForm/FilteredForm';
 import NoResultsFavorites from 'components/NoResultsFavorites/NoResultsFavorites';
 import { fetchAll } from 'redux/adverts/operations';
 import { getAdverts } from 'redux/adverts/selectors';
-import { FavoriteContainer } from './Favorite.styled';
 import { CatalogContainer } from 'pages/Catalog/Catalog.styled';
 
 export const Favorite = () => {
