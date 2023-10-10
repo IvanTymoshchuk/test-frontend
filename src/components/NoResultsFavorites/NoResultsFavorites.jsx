@@ -20,7 +20,7 @@ export const NoResultsFavorites = () => {
         <Loader />
       ) : (
         <FotoContainer>
-          <img src={ImgNoRes} alt="No results Found" width="50%" />
+          <img src={ImgNoRes} alt="No results Found" />
           <Buttons onClick={handleExploreClick} text="See all catalog" />
         </FotoContainer>
       )}
