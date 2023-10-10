@@ -13,8 +13,9 @@ import {
   ConditionsList,
   ConditionsItem,
   Accent,
+  Button,
+  ButtonLink,
 } from './CarInfo.styled';
-import Buttons from 'components/Button/Button';
 
 export const CarInfo = ({ advert }) => {
   const {
@@ -98,7 +99,9 @@ export const CarInfo = ({ advert }) => {
             Price: <Accent>{rentalPrice}</Accent>
           </ConditionsItem>
         </ConditionsList>
-        <Buttons href="tel:+380730000000" text="Rental car" width="200px" />
+        <Button>
+          <ButtonLink href="tel:+380730000000">Rental car</ButtonLink>
+        </Button>
       </AllContainer>
     </>
   );

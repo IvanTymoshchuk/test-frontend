@@ -81,3 +81,24 @@ export const Accent = styled.span`
   font-weight: 600;
   letter-spacing: -0.24px;
 `;
+export const Button = styled.button`
+  width: 168px;
+  height: 40px;
+  padding: 12px 50px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: ${colors.blueActenct};
+  color: ${colors.white};
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(11, 68, 205, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+`;
+
+export const ButtonLink = styled.a`
+  color: ${colors.white};
+`;
